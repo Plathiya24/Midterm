@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parthil Lathiya</title>
+
+  <!-- Local Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="mb-5 light-gray-header py-3">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <!-- Left-aligned links -->
+        <div class="d-flex align-items-center gap-3">
+          <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" class="text-decoration-none">HTML5</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="text-decoration-none">JavaScript</a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="text-decoration-none">CSS</a>
+        </div>
+
+        <!-- Right-aligned buttons -->
+        <div class="d-flex align-items-center gap-2">
+          <button class="btn btn-secondary btn-sm" data-bs-theme-value="dark" onclick="setTheme('dark')">Dark</button>
+          <button class="btn btn-light btn-sm" data-bs-theme-value="light" onclick="setTheme('light')">Light</button>
+          <button type="button" class="btn btn-secondary btn-sm">Contact Me</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+    <!-- Title -->
+    <h1 class="text-center mb-4">Online Factorial Calculator</h1>
+
+    <!-- Input Row -->
+    <div class="row mb-3">
+      <div class="col-2 d-flex justify-content-end align-items-center">
+        <label for="numberInput" class="form-label">Enter a number:</label>
+      </div>
+      <div class="col-10">
+        <input id="numberInput" type="number" class="form-control" placeholder="e.g. 5" />
+      </div>
+    </div>
+
+    <!-- Output Row -->
+    <div class="row">
+      <div class="col-2 d-flex justify-content-end align-items-center">
+        <button class="btn btn-secondary" onclick="calculateFactorial()">Enter</button>
+      </div>
+      <div class="col-10">
+        <div id="output" class="output-screen p-3 border rounded">
+          Output will be displayed here…
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center light-gray-header mt-4 py-2">
+    © 2025 Parthil Lathiya – All rights reserved.
+  </footer>
+
+  <!-- Bootstrap JS (local) -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Factorial JS -->
+  <script src="js/factorial.js"></script>
+</body>
+</html>
