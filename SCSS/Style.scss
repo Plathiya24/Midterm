@@ -1,0 +1,55 @@
+$primary: rgb(185, 171, 171);
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.light-gray-header {
+  background-color: #444;
+}
+
+.input-box {
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.output-screen {
+  background-color: #3a2e00; // dark brown box like in image
+  color: #fff;
+  min-height: 70px;
+  border: 1px solid #666;
+}
+
+/* Light Theme Adjustments */
+[data-bs-theme='light'] {
+  body {
+    background-color: #f8f9fa;
+    color: #212529;
+  }
+
+  .input-box {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+  }
+
+  .output-screen {
+    background-color: #f1f1f1;
+    color: #000;
+  }
+
+  .light-gray-header {
+    background-color: #e9ecef;
+  }
+}
+
+/* Styling for info column text */
+.text-info {
+  color: #adb5ff !important;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #ccc;
+}
